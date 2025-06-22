@@ -87,13 +87,14 @@ div {
 }
 
 
-@media (max-width: 800px) {
+@media (max-width: 800px)  {
     div {
   text-align: center;
 }
+
   .weekdays,
 .days {
-  margin: auto 180px;
+  margin: auto 90px;
   display: flex;
   flex-wrap: wrap;
   
