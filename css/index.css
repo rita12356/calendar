@@ -37,6 +37,10 @@ div {
   text-align: center;
 }
 
+.hints{
+  font-size: 20px;
+}
+
 .weekdays,
 .days {
   margin: auto;
