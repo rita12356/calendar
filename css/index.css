@@ -5,6 +5,33 @@ body {
   
   user-select: none;
 }
+h2{
+  margin-right: 10px;
+}
+
+.gray{
+  width: 90%;
+  margin: 20px;
+  background-color: greenyellow;
+}
+
+.green{
+  width: 90%;
+  margin: 20px;
+  background-color: lightgray;
+}
+
+.blue{
+  width: 90%;
+  margin: 20px;
+  background-color: lightblue;
+}
+
+.pink{
+  width: 90%;
+  margin: 20px;
+  background-color: pink;
+}
 
 div {
   text-align: center;
@@ -71,30 +98,93 @@ div {
 @media (max-width: 1023px) {
   div {
   text-align: center;
+
 }
- .weekdays,
-.days {
-  margin: auto 220px;
+
+
+.hints{
+  font-size: 14px;
+  margin-right: 10px;
+  margin-top: 20px;
+}
+
+
+.done::before {
+  content: "";
+  position: absolute;
+  height: 5px;
+  left: 0;
+  right: 0;
+  background-color: red;
+  z-index: 1;
+
+  transform: rotate(-45deg);
+}
+.day,
+.weekday {
+  width: 50px;
+  height: 50px;
+  font-size: 30px;
+
   display: flex;
-  flex-wrap: wrap;
-  
-  
-  
-  
-  width: 500px;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
 }
-
-}
-
-
-@media (max-width: 800px)  {
-    div {
-  text-align: center;
-}
-
   .weekdays,
 .days {
-  margin: auto 90px;
+  margin: auto 180px;
+  display: flex;
+  flex-wrap: wrap;
+  
+  
+  
+  
+  width: 500px;
+}
+}
+
+
+
+@media (max-width: 800px)   {
+  
+    h1 {
+   margin-left: -190px;
+  font-size: 20px;
+}
+.hints{
+  font-size: 19px;
+  margin-right: 190px;
+  margin-top: 20px;
+}
+
+.done::before {
+  content: "";
+  position: absolute;
+  height: 5px;
+  left: 0;
+  right: 0;
+  background-color: red;
+  z-index: 1;
+
+  transform: rotate(-45deg);
+}
+.day,
+.weekday {
+  width: 50px;
+  height: 50px;
+  font-size: 30px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+}
+  .weekdays,
+.days {
+  margin: auto 100px;
   display: flex;
   flex-wrap: wrap;
   
@@ -105,22 +195,53 @@ div {
 }
 
 }
+
+
 @media (max-width: 575px)  {
   h1 {
-  margin-left: -490px;
+  margin-left: -590px;
+  font-size: 14px;
 }
- .weekdays,
-.days {
-  margin: auto 10px;
-  display: flex;
-  flex-wrap: wrap;
-  
-  
-  
-  
-  width: 300px;
+.hints{
+  font-size: 11px;
+  margin-right: 590px;
+  margin-top: 20px;
 }
 
+ .done::before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  left: 0;
+  right: 0;
+  background-color: red;
+  z-index: 1;
+
+  transform: rotate(-45deg);
+}
+.day,
+.weekday {
+  width: 25px;
+  height: 25px;
+  font-size: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+}
+  .weekdays,
+.days {
+  margin: auto -10px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: -20px;
+  
+  
+  
+  width: 310px;
+}
 
 
 }
