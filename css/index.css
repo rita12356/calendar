@@ -38,7 +38,7 @@ div {
 }
 
 .hints{
-  font-size: 20px;
+  font-size: 40px;
 }
 
 .weekdays,
@@ -107,7 +107,7 @@ div {
 
 
 .hints{
-  font-size: 14px;
+  font-size: 18px;
   margin-right: 10px;
   margin-top: 20px;
 }
@@ -154,12 +154,43 @@ div {
 @media (max-width: 800px)   {
   
     h1 {
-   margin-left: -190px;
+   margin-left: -510px;
   font-size: 20px;
+}
+    h2 {
+   margin-left: -390px;
+  font-size: 20px;
+}
+.gray{
+  width: 40%;
+  margin: 20px;
+  background-color: greenyellow;
+}
+
+.green{
+  width: 40%;
+  margin: 20px;
+  background-color: lightgray;
+}
+
+.blue{
+  width: 40%;
+  margin: 20px;
+  background-color: lightblue;
+}
+
+.pink{
+  width: 40%;
+  margin: 20px;
+  background-color: pink;
+}
+
+div {
+  text-align: center;
 }
 .hints{
   font-size: 19px;
-  margin-right: 190px;
+  margin-right: 140px;
   margin-top: 20px;
 }
 
@@ -176,9 +207,9 @@ div {
 }
 .day,
 .weekday {
-  width: 50px;
-  height: 50px;
-  font-size: 30px;
+  width: 44px;
+  height: 44px;
+  font-size: 19px;
 
   display: flex;
   justify-content: center;
@@ -188,17 +219,20 @@ div {
 }
   .weekdays,
 .days {
-  margin: auto 100px;
+  margin: auto -110px;
   display: flex;
   flex-wrap: wrap;
   
   
   
   
-  width: 500px;
+  width: 490px;
+}
 }
 
-}
+
+
+
 
 
 @media (max-width: 575px)  {
@@ -206,9 +240,13 @@ div {
   margin-left: -590px;
   font-size: 14px;
 }
+  h2 {
+   margin-left: -420px;
+  font-size: 17px;
+}
 .hints{
   font-size: 11px;
-  margin-right: 590px;
+  margin-right: 190px;
   margin-top: 20px;
 }
 
