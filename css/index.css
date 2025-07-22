@@ -2,7 +2,7 @@ body {
   margin: 0;
   font-family: "Arial";
   min-width: 900px;
-  
+overflow-x: hidden;  
   user-select: none;
 }
 h2{
@@ -180,7 +180,7 @@ div {
 }
 
 .pink{
-  width: 40%;
+  width: 30%;
   margin: 20px;
   background-color: pink;
 }
