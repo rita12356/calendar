@@ -1,8 +1,8 @@
 body {
   margin: 0;
   font-family: "Arial";
-  min-width: 900px;
-overflow-x: hidden;  
+ 
+
   user-select: none;
 }
 h2{
@@ -39,17 +39,20 @@ div {
 
 .hints{
   font-size: 40px;
+  padding: 10px;
+  box-sizing: border-box;
 }
 
 .weekdays,
 .days {
-  margin: auto;
+  
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   padding: 20px;
   gap: 20px;
-  width: 900px;
+  max-width: 900px;
+  margin: 0 auto;
 }
 /* Этот класс должен быть у каждого квадрата */
 .day,
@@ -99,17 +102,13 @@ div {
 }
 
 
-@media (max-width: 1023px) {
-  div {
-  text-align: center;
-
-}
-
+@media (min-width: 768px) and (max-width: 1200px) {
+ 
 
 .hints{
   font-size: 18px;
-  margin-right: 10px;
-  margin-top: 20px;
+  padding: 10px;
+  box-sizing: border-box;
 }
 
 
@@ -136,118 +135,33 @@ div {
 
   position: relative;
 }
-  .weekdays,
+
+.weekdays,
 .days {
-  margin: auto 180px;
+  
   display: flex;
   flex-wrap: wrap;
-  
-  
-  
-  
-  width: 500px;
-}
-}
-
-
-
-@media (max-width: 800px)   {
-  
-    h1 {
-   margin-left: -510px;
-  font-size: 20px;
-}
-    h2 {
-   margin-left: -390px;
-  font-size: 20px;
-}
-.gray{
-  width: 40%;
-  margin: 20px;
-  background-color: greenyellow;
-}
-
-.green{
-  width: 40%;
-  margin: 20px;
-  background-color: lightgray;
-}
-
-.blue{
-  width: 40%;
-  margin: 20px;
-  background-color: lightblue;
-}
-
-.pink{
-  width: 30%;
-  margin: 20px;
-  background-color: pink;
-}
-
-div {
-  text-align: center;
-}
-.hints{
-  font-size: 19px;
-  margin-right: 140px;
-  margin-top: 20px;
-}
-
-.done::before {
-  content: "";
-  position: absolute;
-  height: 5px;
-  left: 0;
-  right: 0;
-  background-color: red;
-  z-index: 1;
-
-  transform: rotate(-45deg);
-}
-.day,
-.weekday {
-  width: 44px;
-  height: 44px;
-  font-size: 19px;
-
-  display: flex;
   justify-content: center;
-  align-items: center;
-
-  position: relative;
+  padding: 20px;
+  gap: 20px;
+  max-width: 500px;
+  margin: 0 auto;
 }
-  .weekdays,
-.days {
-  margin: auto -110px;
-  display: flex;
-  flex-wrap: wrap;
-  
-  
-  
-  
-  width: 490px;
-}
+ 
 }
 
-
-
-
-
-
-@media (max-width: 575px)  {
+@media (max-width: 768px)  {
   h1 {
-  margin-left: -590px;
+  text-align: center;
   font-size: 14px;
 }
   h2 {
-   margin-left: -420px;
+   text-align: center;
   font-size: 17px;
 }
 .hints{
   font-size: 11px;
-  margin-right: 190px;
-  margin-top: 20px;
+ box-sizing: border-box;
 }
 
  .done::before {
@@ -263,9 +177,9 @@ div {
 }
 .day,
 .weekday {
-  width: 25px;
-  height: 25px;
-  font-size: 10px;
+  width: 22px;
+  height: 22px;
+  font-size: 13px;
 
   display: flex;
   justify-content: center;
@@ -273,17 +187,21 @@ div {
 
   position: relative;
 }
-  .weekdays,
+
+.weekdays,
 .days {
-  margin: auto -10px;
+  
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: -20px;
-  
-  
-  
-  width: 310px;
+  justify-content: center;
+  padding: 20px;
+  gap: 20px;
+  max-width: 310px;
+  margin: -20px auto;
 }
+ 
 
 
 }
+
+
