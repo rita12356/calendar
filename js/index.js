@@ -1,4 +1,4 @@
-// Выводи даты сюда
+// Вывод даты 
 let daysNode = document.querySelector(`.days`);
 let className = document.querySelectorAll(`.day`);
 let container = document.querySelector(`.container`);
